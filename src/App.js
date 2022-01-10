@@ -6,7 +6,7 @@ import Experience from "./pages/experience";
 import Project from "./pages/project";
 import Contact from "./pages/contact";
 import Menu from "./pages/menu";
-import "./app.css";
+import "./App.css";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
