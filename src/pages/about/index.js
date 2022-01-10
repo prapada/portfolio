@@ -3,6 +3,7 @@ import styled, {keyframes} from "styled-components";
 import me from "../../assets/images/me.png";
 import Title from "../../components/title";
 import {BgColor, Black, White} from "../../components/color";
+import BaseButton from "../../components/button";
 
 function About(props) {
   return (
@@ -16,6 +17,17 @@ function About(props) {
           <br/> <br/>
           Flexible within the working environment and able to adapt quickly and positively to challenging situations. I am a quick learner and a good team member.
         </Main>
+        <HolderButton>
+          <a
+            rel={"noreferrer"}
+            href={"./resume-2021.pdf"}
+            style={{ "text-decoration": "none" }}
+            download
+            target={'_blank'}
+          >
+            <BaseButton title={"Resume"}/>
+          </a>
+        </HolderButton>
       </Box>
       <BoxImg>
         <Img src={me}/>
@@ -61,7 +73,7 @@ const Box = styled.div`
   border: 2px solid #2a3cad;
   color: ${White};
   width: 50vw;
-  height: auto;
+  height: 70vh;
   position: relative;
   left: calc(5rem + 5vw);
   animation: ${opacity} 3s linear;
@@ -72,8 +84,9 @@ const Box = styled.div`
     width: 80%;
     height: fit-content;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 `;
 
@@ -88,6 +101,7 @@ const Main =  styled.div`
   backdrop-filter: blur(4px);
   font-family: 'Ubuntu Mono', monospace;
   font-style: italic;
+  padding-bottom: 0;
 
   @media (max-width: 425px) {
     font-size: calc(0.3rem + 2vw);
@@ -102,7 +116,7 @@ const BoxImg = styled.div`
   border: 2px solid #2a3cad;
   color: ${White};
   width: 30vw;
-  height: 60vh;
+  height: 70vh;
   right: calc(5rem + 5vw);
   margin-left: 2rem;
   position: relative;
@@ -113,10 +127,16 @@ const BoxImg = styled.div`
   }
 `;
 
-
 const Img = styled.img`
   width: 100%;
   height: auto;
   object-fit: cover;
   object-position: 0 0;
+`;
+
+const HolderButton = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem;
 `;
