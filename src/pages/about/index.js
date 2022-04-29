@@ -20,7 +20,7 @@ function About(props) {
         <HolderButton>
           <a
             rel={"noreferrer"}
-            href={"./resume-2021.pdf"}
+            href={"./resume-2022.pdf"}
             style={{ "text-decoration": "none" }}
             download
             target={'_blank'}
