@@ -31,6 +31,8 @@ function Experience(props) {
         <SkillBar text={"React"} width={"80%"} color={Purple}/>
         <SkillBar text={"React Native"} width={"50%"} color={Green}/>
         <SkillBar text={"Python (Django)"} width={"60%"} color={Red}/>
+        <SkillBar text={"Vue.js"} width={"40%"} color={Purple}/>
+        <SkillBar text={"Node.js"} width={"40%"} color={Green}/>
       </HolderSkill>
     </Holder>
   );
