@@ -16,7 +16,7 @@ function Experience(props) {
           Checker Co., Ltd
         </Section>
         <Text>
-          April 2014 - current
+          April 2014 - April 2022
         </Text>
         <Text>
           Responsible for managing and develop UX/UI and content management systems for education.
